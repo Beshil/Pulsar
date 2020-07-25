@@ -213,6 +213,33 @@ font-size: 16px;
 		}
 }
 
+/* SECTION CAROUSEL */ 
+.carousel {
+  padding: 81px 0;
+
+  &__inner {
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slick-prev, .slick-next{
+    width: 31px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: -66px;
+    border:none;
+    outline: none;
+    background: none;
+  }
+  
+  .slick-next{
+    right: -61px;
+    left: auto;
+  }
+}
+
 
 
 @import '_media';
