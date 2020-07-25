@@ -1,4 +1,6 @@
-@import '_variables.scss';
+@import '_variables';
+@import '_template';
+
 *{
   font-family: 'Museo Sans Cyrl ', sans-serif;
   font-weight: 500;
@@ -50,14 +52,15 @@
   }
 }
 .button {
+  @extend %btn;
   width: 150px;
   height: 30px;
-  border: none;
   border-radius: 5px;
   background-color: $main-color;
   color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
+  
 }
 
 
@@ -70,10 +73,10 @@
     }
 
 		&__title {
-  color: #ffffff;
-  font-size: 42px;
-  font-weight: 700;
-  text-transform: uppercase;
+      color: #ffffff;
+      font-size: 42px;
+      font-weight: 700;
+      text-transform: uppercase;
 		}
 
 		&__subtitle {
@@ -138,7 +141,6 @@ font-size: 16px;
 }
 .row {
   width: 245px;
-  height: 230px;
   margin: 0 48px 0;
 
   &__title {
@@ -161,3 +163,56 @@ font-size: 16px;
   }
   }
 
+/* SECTION .consultation */ 
+
+.consultation{
+  padding: 100px 0 92px;
+  background: url(../img/bg-consult.jpg) center/cover no-repeat;
+
+		&__title {
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+		}
+
+		&__descr {
+      color: #ffffff;
+      font-size: 20px;
+      margin: 80px 0 36px;
+		}
+}
+
+.feed-form {
+  width: 300px;
+  input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #4b4b4b;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    outline: none;
+  }
+}
+.button {
+
+		&__submit {
+      @extend %btn;
+      width: 300px;
+      height: 55px;
+      border-radius: 5px;
+      background-color: $main-color;
+      color: #ffffff;
+      font-size: 16px;
+      text-transform: uppercase;
+      
+		}
+}
+
+
+
+@import '_media';
