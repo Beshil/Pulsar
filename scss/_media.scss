@@ -1,0 +1,100 @@
+@media (max-width: 1024px){
+  .promo{
+    padding: 18px 20px 75px;
+  }
+}
+
+@media (max-width: 850px){
+  .promo{
+    &__ofical{
+      display: none;
+    }
+
+    &__title{
+      font-size: 35px;
+    }
+
+    &__subtitle {
+      font-size: 17px;
+    }
+  }
+
+  .advantage{
+    padding: 35px 0 37px;
+    &__title{
+      margin: 0;
+    }
+
+    &__rows{
+      margin-top: 30px;
+    }
+  }
+  .row__title{
+    margin: 28px 0 15px;
+  }
+  .button-promo {
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    }
+    .promo__link a {
+      margin-top: 18px;
+      font-size: 12px;
+    }
+
+    .consultation{
+      padding: 50px 0 44px 20px;
+
+      &__title{
+        
+      font-size: 25px;
+      }
+      &__descr{
+        margin: 40px 0 17px;
+      }
+    }
+}
+
+@media (max-width: 430px){
+  .promo{
+    padding: 5px 5px;
+
+    &__contact a {
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+  }
+  .button {
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px){
+  .promo{
+
+    text-align: center;
+    
+    &__contact{
+      display: none;
+    }
+
+    &__content{
+      margin-top: 45px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+  }
+  .header{
+    padding-top: 5px;
+  }
+
+}
